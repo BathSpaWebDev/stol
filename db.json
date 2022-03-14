@@ -1,5 +1,4 @@
 {
-  "data":{
   "total": 10000,
   "total_pages": 400,
   "results": [
@@ -1864,5 +1863,4 @@
       "productName": "The Ortega"
     }
   ]
-}
 }
