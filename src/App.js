@@ -1,17 +1,16 @@
+import './normalize.css'
 import './App.css'
-import chairData from './db.json'
+import { Header } from './components/Header/Header'
+import { Results } from './components/Results/Results'
+import { Footer } from './components/Footer/Footer'
 
 const App = () => {
 
     return (
-      
         <div className={"App"}>
-            {chairData.results.map(chair => 
-            <>
-              <img src={chair.urls.small} alt="" ></img>
-              <p>{chair.productName}</p>
-            </>
-            )}
+          <Header />
+          <Results />
+          <Footer />
         </div>
     );
 }
