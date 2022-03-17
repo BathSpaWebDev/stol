@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@200;300;500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:200;
+  padding:0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overscroll-behavior-y: none;
+}
+
+h1 {
+  text-align: center;
+  padding: 65px;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  transition: all 0.5s ease;
+}
+
+.rainbow {
+  background-image: linear-gradient(-90deg, black 0,lightcoral 20%,black 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

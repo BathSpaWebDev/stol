@@ -1,6 +1,5 @@
 import logo from '../../logo.svg';
 
 export const Logo = () => {
-  console.log(logo)
-    return <img src={logo} className="App-logo" alt="logo"/>
+    return <a href="/"><img src={logo} className="logo" alt="logo" /></a>
 }
