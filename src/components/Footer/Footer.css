@@ -1,9 +1,12 @@
 .footer {
   background-color: rgb(207, 163, 163);
-  height: 80px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  bottom: 0;
+  left: 0;
 }
 
 .logo {

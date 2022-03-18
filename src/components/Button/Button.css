@@ -1,0 +1,20 @@
+button {
+    cursor: pointer;
+    border: 0;
+    margin: 40px 0;
+    background: none rgb(19, 20, 19);
+    display: inline-block;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: normal;
+    padding: 20px 32px;
+    color: rgb(255, 255, 255);
+    transition: background-color 300ms ease-in-out 0s;
+    width: 100%;
+}
+
+button:hover {
+  background-color: rgb(54, 54, 54)
+}

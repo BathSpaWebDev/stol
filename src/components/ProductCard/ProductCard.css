@@ -43,10 +43,7 @@
   align-items: center;;
 }
 
-.stock-alert {
-  font-size: small;
-  color: lightcoral;
-}
+
 
 @media only screen and (max-width: 1300px) {
   .product-card {
@@ -63,8 +60,3 @@ h2 {
   font-family: 'Karla', sans-serif;
   font-size: large;
 }
-
-/* .animate{
-  opacity: 1;
-  -webkit-transition: opacity 2s linear;
-} */
