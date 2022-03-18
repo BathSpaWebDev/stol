@@ -1,0 +1,35 @@
+.bread-crumbs {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.item-view {
+  display: flex;
+  flex-wrap:nowrap;  
+}
+
+.item-main-photo > img {
+  width: 65vw;
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.item-info-panel {
+  padding: 3vw;
+}
+.item-page {
+  position: relative;
+  z-index: 1;
+  background :#fff;
+  min-height: 100vh;
+}
+
+.description {
+  line-height: 1.6;
+}
+
+h3.price-tag {
+  padding: 30px 0;
+  font-size: 23px
+}
