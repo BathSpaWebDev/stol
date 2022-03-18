@@ -1,13 +1,13 @@
 import './ProductCard.css'
 import { Link } from "react-router-dom";
 import { StockAlert } from '../StockAlert/StockAlert';
-// import {useState} from "react";
 
 export const ProductCard = ({imageUrl, portfolioLink, authorName, productName, productPrice, productStock}) => {
-  // const [count, setCount] = useState(0)
-    return (<Link to={`/product/` + productName.replace(' ', '-')} >
+
+    return (
+    
+    <Link to={`/product/` + productName.replace(' ', '-')} >
       <div className="product-card"  onClick={() => {
-        // setCount(count + 1)
 
         }}
         >
@@ -23,6 +23,6 @@ export const ProductCard = ({imageUrl, portfolioLink, authorName, productName, p
             </span>
           </div>
       </div>
-      </Link>
+    </Link>
     )
 }

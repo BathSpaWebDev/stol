@@ -1,0 +1,18 @@
+.checkout-table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(230, 230, 230);
+
+
+}
+
+.checkout-table-row > *{
+  padding: 30px;
+}
+
+.checkout-table-row>img{
+  width:200px;
+  height:150px;
+  object-fit: cover;
+}
