@@ -8,23 +8,23 @@ import { useState } from 'react';
 
 export const ItemPage = () => {
 
-  const [basketItems, setBasketItems] = useState([]);
+                                            const [basketItems, setBasketItems] = useState([]);
 
-  localStorage.setItem('cart', basketItems); // Saves in browser local storage
+                                            // localStorage.setItem('cart', basketItems); // Saves in browser local storage
 
-  const onAdd = (product) => {
-      const exist = basketItems.find(x => x.productName === product.productName);
-      if(exist) {
-          setBasketItems(basketItems.map(x => x.productName === product.productName ? {...exist, quantity: exist.quantity + 1 } : x))
-      } else {
-          setBasketItems([...basketItems, {...product, quantity: 1}])
-      }
-  }
+                                            const onAdd = (product) => {
+                                                const exist = basketItems.find(x => x.productName === product.productName);
+                                                if(exist) {
+                                                    setBasketItems(basketItems.map(x => x.productName === product.productName ? {...exist, quantity: exist.quantity + 1 } : x))
+                                                } else {
+                                                    setBasketItems([...basketItems, {...product, quantity: 1}])
+                                                }
+                                            }
 
 
-  // const {onAdd, basketItems} = props;
-  var basket = [];
-// console.log(basket);
+                                            // const {onAdd, basketItems} = props;
+                                            var basket = [];
+                                          // console.log(basket);
     // Resets scroll position
     window.scrollTo(0,0);
 
@@ -33,15 +33,15 @@ export const ItemPage = () => {
 
     // const [count, setCount] = useState(0)
 
-    const clickHandler = () => {
-      basket.push({productName, productPrice})
-      console.log({basketItems})
-      onAdd(product);
-        // Check if product exists in array 
-        // if yes - add counter (initiate at 0 and ++)
+                                                const clickHandler = () => {
+                                                  basket.push({productName, productPrice})
+                                                  console.log({basketItems})
+                                                  onAdd(product);
+                                                    // Check if product exists in array 
+                                                    // if yes - add counter (initiate at 0 and ++)
 
-console.log(`Quantity:  ${basketItems[0].quantity}`)
-    }
+                                            console.log(`Quantity:  ${basketItems[0].quantity}`)
+                                                }
 
 
 
@@ -56,16 +56,16 @@ console.log(`Quantity:  ${basketItems[0].quantity}`)
     }
   }
 
-  const product = getProductData(database, name);
+                                                const product = getProductData(database, name);
 
 
-    const regularImageUrl= product.urls.regular;
-    const portfolioLink=product.user.links.html;
-    const authorName=product.user.name;
-    const productName=product.productName;
-    const productDescription=product.description;
-    const productPrice=product.price;
-    const productStock=product.stock;
+                                                  const regularImageUrl= product.urls.regular;
+                                                  const portfolioLink=product.user.links.html;
+                                                  const authorName=product.user.name;
+                                                  const productName=product.productName;
+                                                  const productDescription=product.description;
+                                                  const productPrice=product.price;
+                                                  const productStock=product.stock;
 
   return (
     <div className='item-page' key={productName}>
@@ -82,7 +82,7 @@ console.log(`Quantity:  ${basketItems[0].quantity}`)
           </p>
           <h3 className='price-tag'>£{productPrice}</h3>
           <p className='description' onClick={clickHandler}>{productDescription}</p>
-          <Button text='Add to basket' />
+          <Button text='Add to basket' action={onAdd} />
         </span>
       </div>
     </div>

@@ -24,10 +24,13 @@ export const CheckoutTableRow = (props) => {
             src={getProductDataById(item).thumb}
             alt={getProductDataById(item).productName}
         />
+        <span>
         <h3 key={key} >
             {/* Product: */}
             <Link to={`/product/` + getProductDataById(item).productName.replace(' ', '-')} >{getProductDataById(item).productName}</Link> 
         </h3>
+        <a className='remove-item' href="/">Remove</a>
+        </span>
         <h2 key={key}>
             Price: £{getProductDataById(item).price}
         </h2>

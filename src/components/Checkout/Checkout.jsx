@@ -14,6 +14,12 @@ export const Checkout = (props) => {
     <h1>Checkout</h1>
     <div className="checkout-table">
       {Object.keys(basketItems).length === 0  && <h2>Basket is empty</h2>}
+      {/* <div className='checkout-table-row'>
+      <h2>Product</h2>
+      <h2>Unit price</h2>
+      <h2>Quantity</h2>
+      <h2>Total</h2>
+      </div> */}
       <CheckoutTableRow basketItems={basketItems}/>
       <Button text="Buy now" />
     </div>

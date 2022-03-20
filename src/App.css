@@ -51,3 +51,11 @@ a {
   color: #000;
 }
 
+.remove-item {
+  border-bottom: 1px solid #000;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+
+
