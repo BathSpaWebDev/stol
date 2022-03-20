@@ -2,8 +2,7 @@ import database from '../../db.json'
 import { ProductCard } from '../ProductCard/ProductCard'
 import './Results.css'
 
-export const Results = () => {
-    return (
+export const Results = () =>  (
       <>
       <h1>Chairs that hug.</h1>
       <div className="results" >
@@ -24,4 +23,3 @@ export const Results = () => {
         }
       </div>
       </> )
-}

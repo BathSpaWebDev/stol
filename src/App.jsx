@@ -21,18 +21,19 @@ const basketItems = [ {
     return (
         <div className={"App"}>
             <BrowserRouter>
+            <Header />
                             <Routes>
                                 <Route
                                     path={"/product/:name"}
-                                    element={<><Header /><ItemPage /><Footer /></>} />
+                                    element={<ItemPage />} />
                                 <Route
                                     path={"/"}
-                                    element={<><Header /><Results /><Footer /></>} />
+                                    element={<Results />} />
                                 <Route
                                     path={"/checkout"}
-                                    element={<><Header /><Checkout basketItems={basketItems}/><Footer /></>} />
+                                    element={<Checkout basketItems={basketItems}/>} />
                             </Routes>
-                            
+            <Footer />                
             </BrowserRouter>
         </div>
     );
