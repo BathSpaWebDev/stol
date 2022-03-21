@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  /* filter: blur(4px); */
 }
 
 body {
@@ -56,6 +57,3 @@ a {
   overflow: hidden;
   margin-top: 30px;
 }
-
-
-
