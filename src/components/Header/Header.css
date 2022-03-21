@@ -14,6 +14,7 @@ border-bottom: 1px solid rgb(240, 240, 240);
 
 .header-content {
 justify-content: space-between;
+align-items: center;
 display: flex;
 padding-left: 48px;;
 padding-right: 48px;;

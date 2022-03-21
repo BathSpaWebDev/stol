@@ -54,6 +54,17 @@
     }
 }
 
+@media only screen and (max-width: 900px) {
+  .product-card {
+    width: 90vw;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    padding-bottom: 20px;
+    }
+    .product-thumbnail img {
+      height:80vw;
+    }
+}
+
 h2 {
   font-weight: 400;
   margin-top: 3px;
