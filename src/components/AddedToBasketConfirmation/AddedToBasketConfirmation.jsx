@@ -8,7 +8,7 @@ export const AddedToBasketConfirmation = () => {
       <button>Modal close</button>
       <h2>Added to basket</h2>
       <div className="basket-summary">
-        <img src=""></img>
+        {/* <img src="/"></img> */}
         <p>Item Name</p>
       </div>
       <p>Subtotal (112 items)  £43,090</p>

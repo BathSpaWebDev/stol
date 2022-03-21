@@ -4,7 +4,6 @@ import './Checkout.css'
 import { Button } from '../Button/Button';
 import { useContext } from 'react';
 import { BasketContext } from '../../BasketContext';
-import { TotalBasketValue } from '../TotalBasketValue/TotalBasketValue';
 import { Link } from 'react-router-dom';
 
 export const Checkout = (props) => {
